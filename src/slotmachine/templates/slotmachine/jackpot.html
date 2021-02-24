@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   
+    {% for i in output %}
+        <div class="container">
+            <div class="col">
+                <h3>{{ i }}</h3>
+            </div>
+        </div>
+    {% endfor %}
+    
+
+    <h3>Credit: {{ credit }}</h3>
+    
+    {% if you_can_play %}
+        <button class="init2" ><a href="{% url 'jackpot-play' 'play' %}">PLAY</a></button>
+    {% endif %}
+        <button class="init2" ><a href="{% url 'jackpot-play' 'cash_out' %}">CASH OUT</a></button>
+    
+{% endblock content %}
+
+
+
+

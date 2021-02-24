@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <div class="container">
+             <div class="vertical-center">
+                <h1>WELCOME TO THE NEW SLOT MACHINE!</h1>
+                <h2>Just puch play and win the JACKPOT!!!</h2>
+                <br>
+                <button class="init" ><a href="{% url 'jackpot-play' 'play' %}">PLAY</a></button>
+            </div>
+        </div>
+        
+    
+{% endblock content %}
+
